@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXORA — Create Without Limits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="intro">
+    <div class="intro-orb"></div>
+    <h1>NEXORA</h1>
+    <p>CREATE WITHOUT LIMITS</p>
+    <div class="loader"></div>
+  </div>
+
+  <!-- MAIN APP -->
+  <div id="app">
+
+    <header>
+      <div class="logo">NEXORA<span>.</span></div>
+      <div class="header-right">
+        <span class="online-dot"></span>
+        SYSTEM ONLINE
+      </div>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <p class="eyebrow">YOUR CREATIVE WORKSPACE</p>
+        <h1>Welcome to <span>NEXORA</span></h1>
+        <p>Everything you need to create, explore and build.</p>
+      </section>
+
+      <section class="dashboard">
+
+        <div class="app-card docs" onclick="openApp('docs')">
+          <div class="card-icon">▤</div>
+          <h2>Docs</h2>
+          <p>Create documents, notes and projects.</p>
+          <span>OPEN WORKSPACE →</span>
+        </div>
+
+        <div class="app-card stocks" onclick="openApp('stocks')">
+          <div class="card-icon">↗</div>
+          <h2>Stocks</h2>
+          <p>Explore markets and simulate portfolios.</p>
+          <span>OPEN MARKETS →</span>
+        </div>
+
+        <div class="app-card gaming" onclick="openApp('gaming')">
+          <div class="card-icon">🎮</div>
+          <h2>Gaming</h2>
+          <p>Play games and create your own.</p>
+          <span>OPEN GAMING →</span>
+        </div>
+
+        <div class="app-card music" onclick="openApp('music')">
+          <div class="card-icon">♫</div>
+          <h2>Music</h2>
+          <p>Make beats and compose music.</p>
+          <span>OPEN STUDIO →</span>
+        </div>
+
+        <div class="app-card animation" onclick="openApp('animation')">
+          <div class="card-icon">▶</div>
+          <h2>2D Animation</h2>
+          <p>Draw frames and animate creations.</p>
+          <span>OPEN ANIMATION →</span>
+        </div>
+
+        <div class="app-card drawing" onclick="openApp('drawing')">
+          <div class="card-icon">✎</div>
+          <h2>Drawing</h2>
+          <p>Draw, paint and save artwork.</p>
+          <span>OPEN CANVAS →</span>
+        </div>
+
+        <div class="app-card studio" onclick="openApp('studio')">
+          <div class="card-icon">◇</div>
+          <h2>3D Studio</h2>
+          <p>Build and animate 3D creations.</p>
+          <span>OPEN 3D STUDIO →</span>
+        </div>
+
+        <div class="app-card ai" onclick="openApp('ai')">
+          <div class="card-icon">✧</div>
+          <h2>NEXORA AI</h2>
+          <p>Your intelligent creative assistant.</p>
+          <span>OPEN AI →</span>
+        </div>
+
+      </section>
+
+      <section id="workspace" class="workspace">
+        <button class="back-button" onclick="closeApp()">← Dashboard</button>
+        <h2 id="workspace-title">Workspace</h2>
+        <div id="workspace-content"></div>
+      </section>
+
+    </main>
+
+    <footer>
+      NEXORA © 2026 · YOUR WORLD OF CREATION
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
